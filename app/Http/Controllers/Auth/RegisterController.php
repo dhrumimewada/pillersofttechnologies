@@ -76,7 +76,7 @@ class RegisterController extends Controller
             'verification_code' => $verification_code
         ]);
 
-        Mail::to($data['email'])->send(new WelcomeMail($user));
+        //Mail::to($data['email'])->send(new WelcomeMail($user));
 
         return $user;
     }

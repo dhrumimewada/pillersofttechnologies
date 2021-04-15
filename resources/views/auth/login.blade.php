@@ -43,7 +43,7 @@
           
           @if (Route::has('login'))
             @auth
-              
+              <li><a href="/">Home</a></li>
               @else
                 <li class="active"><a href="{{ route('login') }}">Login</a></li>
                 @if (Route::has('register'))
